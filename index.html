@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="bg-[#F9F7F3] sticky ">
+        <div class="navbar pb-14 max-w-7xl m-auto">
+          <div class="navbar-start">
+            <a class="btn bg-[#b4f461] hidden lg:block" href="blog.html" target="_blank">Blog</a>
+          </div>
+          <div class="navbar-center gap-3 hidden md:block lg:flex">
+            <img src="assets/logo.png" alt="" />
+            <h1 class="font-bold text-2xl">Donate Bangladesh</h1>
+          </div>
+          <div class="navbar-end flex gap-3">
+            <img src="assets/coin.png" alt="" />
+            <h1 id="available_balance" class="font-bold text-2xl">8500</h1>
+            <h1 class="font-bold text-2xl">BDT</h1>
+          </div>
+        </div>
+      </nav>
+
+      <div class="flex max-w-7xl m-auto justify-center gap-4 mt-4">
+        <button id="first-btn" class="btn btn-lg ">Donate</button>
+        <button id="transection-btn" class="btn btn-lg">History</button>
+      </div>
+    </header>
+    <main class="max-w-7xl m-auto">
+      <section id="donate-upper-btn">
+        <div class="card lg:card-side bg-base-100 shadow-xl p-7 mb-3">
+          <figure class="w-full">
+            <img src="assets/noakhali.png" alt="Album" />
+          </figure>
+  
+          <div class="card-body">
+            <div class="flex gap-3">
+              <img src="assets/coin.png" alt="" />
+              <div class="bg-[#F3F3F3] p-3 border rounded-2xl flex gap-4">
+                  <h1 id="total-donation" class="font-bold text-2xl ">
+                      0
+                    </h1>
+                    <h1 class="font-bold text-2xl">BDT</h1>
+              </div>
+            </div>
+            <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
+            <p>
+              The recent floods in Noakhali have caused significant damage to
+              homes infrastructure. Your donation will help provide essential
+              supplies and to those affected by this disaster. Every contribution,
+              big or small, makes difference. Please join us in supporting the
+              relief efforts and making a positive impact on the lives of those in
+              need.
+            </p>
+            <input
+              type="text" id="donate"
+              placeholder="Write Donation Amount"
+              class="input input-bordered w-full"
+            />
+            <button id="noakhali_donate_button" class="btn bg-[#b4f461]">Donate</button>
+          </div>
+        </div>
+  
+        <!-- Donation  for feni -->
+        <div class="card lg:card-side bg-base-100 shadow-xl p-10 mb-3">
+          <figure class="w-full">
+            <img src="assets/feni.png" alt="Album" />
+          </figure>
+  
+          <div class="card-body">
+            <div class="flex gap-3">
+              <img src="assets/coin.png" alt="" />
+              <div class="bg-[#F3F3F3] p-3 border rounded-2xl flex gap-4">
+                  <h1 id="total-donation_feni" class="font-bold text-2xl ">
+                      300
+                    </h1>
+                    <h1 class="font-bold text-2xl">BDT</h1>
+              </div>
+            </div>
+            <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
+            <p>
+              The recent floods in Feni have devastated local communities, leading
+              to severe disruption and loss. Your generous donation will help
+              provide immediate aid, including food, clean water, and medical
+              supplies, to those affected by this calamity. Together, we can offer
+              crucial support and help rebuild lives in the aftermath of this
+              disaster. Every contribution counts towards making a real
+              difference. Please consider donating today to assist those in urgent
+              need.
+            </p>
+            <input
+              type="text" id="donate_feni"
+              placeholder="Write Donation Amount"
+              class="input input-bordered w-full"
+            />
+            <button id="feni_donate_button" class="btn bg-[#b4f461]">Donate</button>
+          </div>
+        </div>
+  
+  
+        <!-- donation for  -->
+        <div class="card lg:card-side bg-base-100 shadow-xl p-10 mb-3">
+          <figure class="w-full">
+            <img src="assets/quota-protest.png" alt="Album" />
+          </figure>
+  
+          <div class="card-body">
+            <div class="flex gap-3">
+              <img src="assets/coin.png" alt="" />
+              <h1 id="total_aid" class="font-bold text-2xl bg-[#F3F3F3] p-3 border rounded-2xl">
+                2400 BDT
+              </h1>
+            </div>
+            <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
+            <p>
+              The recent Quota movement has resulted in numerous injuries and
+              significant hardship for many individuals. Your support is crucial
+              in providing medical assistance, rehabilitation, and necessary
+              supplies to those affected. By contributing, you help ensure that
+              injured individuals receive the care and support they need during
+              this challenging time. Every donation plays a vital role in
+              alleviating their suffering and aiding in their recovery. Please
+              consider making a donation to support these brave individuals in
+              their time of need.
+            </p>
+            <input
+              type="text" id="donate_aid"
+              placeholder="Write Donation Amount"
+              class="input input-bordered w-full"
+            />
+            <button id="quota_movement_btn" class="btn bg-[#b4f461]">Donate
+            </button>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="transection-container">
+        
+      </section>
+    </main>
+    <script src="js/shared.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/features.js"></script>
+  </body>
+</html>
