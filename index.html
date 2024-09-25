@@ -10,10 +10,22 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .navbar-form {
+        overflow: hidden;
+        /* background-color: #333; */
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+        background: transparent;
+        backdrop-filter: blur(4px);
+      }
+    </style>
   </head>
   <body>
     <header>
-      <nav class="bg-[#F9F7F3] sticky ">
+      <nav class="navbar-form">
         <div class="navbar pb-14 max-w-7xl m-auto">
           <div class="navbar-start">
             <a class="btn bg-[#b4f461] hidden lg:block" href="blog.html" target="_blank">Blog</a>
@@ -30,7 +42,7 @@
         </div>
       </nav>
 
-      <div class="flex max-w-7xl m-auto justify-center gap-4 mt-4">
+      <div class="flex max-w-7xl m-auto justify-center gap-4 mt-32">
         <button id="first-btn" class="btn btn-lg ">Donate</button>
         <button id="transection-btn" class="btn btn-lg">History</button>
       </div>

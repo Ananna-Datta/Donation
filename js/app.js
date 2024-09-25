@@ -14,25 +14,16 @@ document
       document.getElementById("total-donation").innerText = newtotalDonation;
       document.getElementById("available_balance").innerText = newbalance;
 
-      //   const div = document.createElement("div");
-      //   div.innerHTML = `
-      //     <button class="btn" onclick="my_modal_1.showModal()">open modal</button>
-      //     <dialog id="my_modal_1" class="modal">
-      //         <div class="modal-box">
-      //             <h3 class="text-lg font-bold">Hello!</h3>
-      //             <p class="py-4">Press ESC key or click the button below to close</p>
-      //             <div class="modal-action">
-      //                 <form method="dialog">
-      //                     <!-- if there is a button in form, it will close the modal -->
-      //                     <button class="btn">Close</button>
-      //                 </form>
-      //             </div>
-      //         </div>
-      //     </dialog>`;
-      //     console.log(div);
-      //     document.getElementById("noakhali_donate_button").innerHTML = div;
+
+
+      // document.getElementById('btn-modal').classList.remove("hidden");
+      // document.getElementById('btn-modal').showModel();
+      alert("Congrates\n you are donated for mankind");
+
+      
     } else {
       alert("Please enter the right amount");
+      return;
     }
 
     const div = document.createElement("div");
@@ -47,6 +38,8 @@ document
     document.getElementById('transection-container').appendChild(div); 
     // console.log(div.innerText);
   });
+
+  
 
 document
   .getElementById("feni_donate_button")
@@ -64,8 +57,10 @@ document
       document.getElementById("total-donation_feni").innerText =
         newtotalDonation;
       document.getElementById("available_balance").innerText = newbalance;
+      alert("Congrates\n you are donated for mankind");
     } else {
       alert("Please enter the right amount");
+      return;
     }
 
     const div = document.createElement("div");
@@ -94,8 +89,10 @@ document
       const newbalance = balance - donation;
       document.getElementById("total_aid").innerText = newtotalDonation;
       document.getElementById("available_balance").innerText = newbalance;
+      alert("Congrates\n you are donated for mankind");
     } else {
       alert("Please enter the right amount");
+      return;
     }
 
     const div = document.createElement("div");
